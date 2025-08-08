@@ -19,5 +19,4 @@
     		System.Console.WriteLine(greeting + " Your random number is: " + number);
     	}
     }
-    }
 }
