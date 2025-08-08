@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using DotNetCoreTwoPointTwo.Models;
+using DotNetCoreTwoPointTwo.Lib;
 
 namespace DotNetCoreTwoPointTwo
 {
@@ -18,6 +19,11 @@ namespace DotNetCoreTwoPointTwo
                 Email = "john@example.com",
                 TemporaryData = "This will be ignored in JSON"
             };
+
+            // Use DotNetCoreTwoPointTwo.Lib
+            var demo = new DemoBoilerplate();
+            string greeting = demo.GetGreeting(person.Name);
+            Console.WriteLine("Greeting from DotNetCoreTwoPointTwo.Lib: " + greeting);
 
             // Basic serialization
             string jsonString = JsonConvert.SerializeObject(person);
