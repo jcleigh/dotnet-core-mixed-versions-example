@@ -15,7 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreThreePointOne.Web\DotNetCoreThreePointOne.Web.csproj" />
     <ProjectReference Include="..\DotNetCoreThreePointOne\DotNetCoreThreePointOne.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreThreePointOne\DotNetCoreThreePointOne.csproj" />
+  <PackageReference Include="Moq" Version="4.16.1" />
   </ItemGroup>
 
 </Project>
